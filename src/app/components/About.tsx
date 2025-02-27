@@ -13,12 +13,13 @@ export default function About() {
         </h2>
       </div>
       <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a skilled software developer with experience in C, PHP, Java, Python, TypeScript, and
-        JavaScript, and expertise in frameworks like React, Node.js, and Next.js. I'm a
-        quick learner and collaborate closely with clients to create efficient, scalable,
-        and user-friendly solutions that solve real-world problems. Let's work together to
-        bring your ideas to life!
-      </p>
+  I&apos;m a skilled software developer with experience in C, PHP, Java, Python, TypeScript, and
+  JavaScript, and expertise in frameworks like React, Node.js, and Next.js. I&apos;m a
+  quick learner and collaborate closely with clients to create efficient, scalable,
+  and user-friendly solutions that solve real-world problems. Let&apos;s work together to
+  bring your ideas to life!
+</p>
+
 
       <div className="mt-20 flex flex-wrap gap-10">
         <div className="xs:w-[250px] w-full">

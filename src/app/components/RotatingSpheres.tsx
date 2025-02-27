@@ -12,20 +12,15 @@ const RotatingSpheres = ({ textures }: RotatingSpheresProps) => {
 
   useEffect(() => {
     const mount = mountRef.current;
-  return () => {
-    if (mount) {
-      // Cleanup logic
-    }
-  };
-}, []);
+    if (!mount) return;
 
     // Scene, Camera, Renderer
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    renderer.setSize(300, 300);
-    mountRef.current.appendChild(renderer.domElement);
 
+    renderer.setSize(300, 300);
+    mount.appendChild(renderer.domElement);
     camera.position.z = 20;
 
     // Lighting
@@ -53,8 +48,6 @@ const RotatingSpheres = ({ textures }: RotatingSpheresProps) => {
       });
 
       const sphere = new THREE.Mesh(geometry, material);
-
-      // Circular arrangement
       const angle = (index / textures.length) * Math.PI * 2;
       sphere.position.set(Math.cos(angle) * 10, Math.sin(angle) * 10, 0);
 
@@ -63,19 +56,24 @@ const RotatingSpheres = ({ textures }: RotatingSpheresProps) => {
     });
 
     // Load OrbitControls dynamically
+    let controls: import("three/examples/jsm/controls/OrbitControls.js").OrbitControls | undefined;
+
     const loadOrbitControls = async () => {
       const { OrbitControls } = await import("three/examples/jsm/controls/OrbitControls.js");
-      const controls = new OrbitControls(camera, renderer.domElement);
+      controls = new OrbitControls(camera, renderer.domElement);
       controls.enablePan = false;
       controls.enableZoom = false;
       controls.rotateSpeed = 0.5;
       controls.enableDamping = true;
     };
-    loadOrbitControls();
+
+loadOrbitControls();
+
 
     // Animation Loop
+    let animationFrameId: number;
     const animate = () => {
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
       spheres.forEach((sphere) => {
         sphere.rotation.x += 0.01;
         sphere.rotation.y += 0.01;
@@ -84,12 +82,15 @@ const RotatingSpheres = ({ textures }: RotatingSpheresProps) => {
     };
     animate();
 
-    // Cleanup
+    // Cleanup function
     return () => {
+      cancelAnimationFrame(animationFrameId);
+      controls?.dispose();
+      spheres.forEach((sphere) => scene.remove(sphere));
       renderer.dispose();
-      mountRef.current?.removeChild(renderer.domElement);
+      mount.removeChild(renderer.domElement);
     };
-  }, [textures]);
+  }, [textures]); // Include `textures` as dependency
 
   return (
     <div className="flex items-center justify-center h-[400px]">
