@@ -8,16 +8,21 @@ import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
 
 export default function Home() {
-  const textures = [
-    "/assets/html.png",
-    "/assets/css.png",
-    "/assets/nodejs.png",
-    "/assets/reactjs.png",
-    "/assets/redux.png",
-    "/assets/docker.png",
-    "/assets/mongodb.png",
-    "/assets/tailwind.png",
-    "/assets/figma.png",
+  const techLogos = [
+    { name: "Html", icon: "/assets/html.png"},
+    { name: "CSS", icon: "/assets/css.png"},
+    { name: "Node.js", icon: "/assets/nodejs.png"},
+    { name: "React.js", icon: "/assets/reactjs.png"},
+    { name: "Redux", icon: "/assets/redux.png"},
+    { name: "Docker", icon: "/assets/docker.png"},
+    { name: "MongoDb", icon: "/assets/mongodb.png"},
+    { name: "Tailwind", icon: "/assets/tailwind.png"},
+    { name: "Figma", icon: "/assets/figma.png"},
+    { name: "Php", icon: "/assets/php.png"},
+    { name: "Nextjs", icon: "/assets/nextjs.png"},
+    { name: "Python", icon: "/assets/python.png"},
+    { name: "JavaScript", icon: "/assets/JavaSript.png"},
+    { name: "Git", icon: "/assets/git.png"},
   ];
 
   return (
@@ -28,7 +33,7 @@ export default function Home() {
       </div>
       <About />
       <Work />
-      <RotatingSpheres textures={textures} />
+      <RotatingSpheres techLogos={techLogos} />
       <Projects />
       <Contact />
       <Footer />
