@@ -11,7 +11,13 @@ const RotatingSpheres = ({ textures }: RotatingSpheresProps) => {
   const mountRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const mount = mountRef.current;
+  return () => {
+    if (mount) {
+      // Cleanup logic
+    }
+  };
+}, []);
 
     // Scene, Camera, Renderer
     const scene = new THREE.Scene();

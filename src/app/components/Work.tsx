@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense, useMemo } from "react";
+//import { Suspense, useMemo } from "react";
 
 export default function Work() {
     return (
