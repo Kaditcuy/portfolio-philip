@@ -21,7 +21,7 @@ export default function Home() {
     { name: "Php", icon: "/assets/php.png"},
     { name: "Nextjs", icon: "/assets/nextjs.png"},
     { name: "Python", icon: "/assets/python.png"},
-    { name: "JavaScript", icon: "/assets/JavaSript.png"},
+    { name: "JavaScript", icon: "/assets/JavaScript.png"},
     { name: "Git", icon: "/assets/git.png"},
   ];
 
