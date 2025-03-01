@@ -36,7 +36,7 @@ export default function Work() {
               <li>Performed testing and debugging of web applications.</li>
               <li>Troubleshooting and resolving software issues.</li>
             </ul>
-            <p className="mt-4 text-secondary text-[14px]">April 2011 - January 2014</p>
+            <p className="mt-4 text-secondary text-[14px]">March 2020 - December 2021</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export default function Work() {
           </div>
 
           <div className="bg-tertiary p-6 rounded-lg shadow-lg flex-1">
-            <h3 className="text-white text-[24px] font-bold">Full Stack Developer</h3>
+            <h3 className="text-white text-[24px] font-bold">Backend Developer</h3>
             <p className="text-secondary text-[16px] font-semibold">HDZB co. Ltd.</p>
             <ul className="mt-4 list-disc ml-5 space-y-2 text-white-100 text-[14px] tracking-wider">
               <li>Involved in product design and technology selection.</li>
@@ -58,7 +58,7 @@ export default function Work() {
               <li>Created internal tooling and libraries for development efficiency.</li>
               <li>Debugging and bug fixing of production issues.</li>
             </ul>
-            <p className="mt-4 text-secondary text-[14px]">October 2014 - September 2022</p>
+            <p className="mt-4 text-secondary text-[14px]">October 2023 - September 2024</p>
           </div>
         </div>
 
@@ -78,6 +78,29 @@ export default function Work() {
               <li>Collaborating with designers, product managers, and developers.</li>
               <li>Implementing responsive design and ensuring cross-browser compatibility.</li>
               <li>Participating in code reviews and providing technical feedback.</li>
+            </ul>
+            <p className="mt-4 text-secondary text-[14px]">January 2023 - Present</p>
+          </div>
+        </div>
+
+         {/* Timeline Node 3 */}
+         <div className="flex items-start">
+          <div className="w-1 h-full bg-[#915EFF] mx-4 relative">
+            <div className="absolute -left-3 top-0 w-7 h-7 rounded-full bg-[#915EFF] flex items-center justify-center">
+              <Image src="/assets/web.png" alt="Freelancer" width={24} height={24} className="object-contain" />
+            </div>
+          </div>
+
+          <div className="bg-tertiary p-6 rounded-lg shadow-lg flex-1">
+            <h3 className="text-white text-[24px] font-bold">DevOps Administrator</h3>
+            <p className="text-secondary text-[16px] font-semibold">Freelancer</p>
+            <ul className="mt-4 list-disc ml-5 space-y-2 text-white-100 text-[14px] tracking-wider">
+              <li>Managing and maintaining CI/CD pipelines to streamline deployment processes.</li>
+              <li>Administering cloud infrastructure and ensuring system reliability, scalability, and security.</li>
+              <li>Monitoring and troubleshooting servers, containers, and applications using tools like Prometheus and Grafana.</li>
+              <li>Implementing and managing Infrastructure as Code (IaC) using Terraform, Ansible, or CloudFormation.</li>
+              <li>Collaborating with developers and IT teams to optimize DevOps workflows.</li>
+              <li>Ensuring compliance with security policies and best practices in DevOps operations.</li>
             </ul>
             <p className="mt-4 text-secondary text-[14px]">January 2023 - Present</p>
           </div>
