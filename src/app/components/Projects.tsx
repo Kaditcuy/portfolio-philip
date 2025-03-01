@@ -28,7 +28,7 @@ export default function Projects() {
         <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
           <div className="relative w-full h-[230px]">
             <Image
-              src="/assets/InstaLingo.png"
+              src="/assets/EFS.png"
               alt="EFS"
               fill
               className="w-full h-full object-cover rounded-2xl"
@@ -48,7 +48,7 @@ export default function Projects() {
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">
               <Link
-                href="https://apps.apple.com/th/app/instalingo/id6680142408"
+                href="https://emoji-feedback-k5q0krxda-philip-ukanwokes-projects.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-violet-600"
@@ -62,8 +62,11 @@ export default function Projects() {
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
             <p className="text-[14px] blue-text-gradient">#react native</p>
+            <p className="text-[14px] blue-text-gradient">#next js</p>
             <p className="text-[14px] green-text-gradient">#firebase</p>
+            <p className="text-[14px] green-text-gradient">#railway</p>
             <p className="text-[14px] pink-text-gradient">#nativewind</p>
+            <p className="text-[14px] blue-text-gradient">#typescript</p>
           </div>
         </div>
 
@@ -71,7 +74,7 @@ export default function Projects() {
         <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
           <div className="relative w-full h-[230px]">
             <Image
-              src="/assets/socialMedia.png"
+              src="/assets/FIRA.png"
               alt="FIRA"
               fill
               className="w-full h-full object-cover rounded-2xl"
@@ -91,7 +94,7 @@ export default function Projects() {
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">
               <Link
-                href="https://alex-social-media.vercel.app"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-violet-600"
@@ -108,6 +111,7 @@ export default function Projects() {
             <p className="text-[14px] blue-text-gradient">#nextjs</p>
             <p className="text-[14px] green-text-gradient">#nodejs</p>
             <p className="text-[14px] pink-text-gradient">#Material-UI</p>
+            <p className="text-[14px] pink-text-gradient">#Oauth</p>
           </div>
         </div>
 
@@ -158,15 +162,15 @@ export default function Projects() {
         <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
           <div className="relative w-full h-[230px]">
             <Image
-              src="/assets/shareNotes.png"
-              alt="Share Notes"
+              src="/assets/propertygirl.png"
+              alt="Diary of a Property Girl"
               fill
               className="w-full h-full object-cover rounded-2xl"
             />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                 <Image
-                  src="/assets/github.png"
+                  src="/assets/propertygirl.png"
                   alt="github"
                   width={20}
                   height={20}
@@ -178,22 +182,25 @@ export default function Projects() {
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">
               <Link
-                href="https://share-notes-peach.vercel.app/"
+                href="https://diaryofapropertygirl.com.ng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-violet-600"
               >
-                Share Notes
+                Diary of A Property Girl
               </Link>
             </h3>
             <p className="mt-2 text-secondary text-[14px]">
-              A website dedicated to sharing notes and knowledge with others.
+              A website dedicated for listing houses for sale and rent.
             </p>
           </div>
           <div className="mt-4 flex flex-wrap gap-2">
-            <p className="text-[14px] blue-text-gradient">#nextjs</p>
-            <p className="text-[14px] green-text-gradient">#tailwind</p>
-            <p className="text-[14px] pink-text-gradient">#TypeScript</p>
+            <p className="text-[14px] blue-text-gradient">#PHP</p>
+            <p className="text-[14px] green-text-gradient">#MYSQL</p>
+            <p className="text-[14px] pink-text-gradient">#JavaScript</p>
+            <p className="text-[14px] purple-text-gradient">#AJAX</p>
+            <p className="text-[14px] green-text-gradient">#CSS</p>
+            <p className="text-[14px] pink-text-gradient">#Html</p>
           </div>
         </div>
       </div>
