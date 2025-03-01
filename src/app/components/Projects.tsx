@@ -198,7 +198,7 @@ export default function Projects() {
             <p className="text-[14px] blue-text-gradient">#PHP</p>
             <p className="text-[14px] green-text-gradient">#MYSQL</p>
             <p className="text-[14px] pink-text-gradient">#JavaScript</p>
-            <p className="text-[14px] purple-text-gradient">#AJAX</p>
+            <p className="text-[14px] blue-text-gradient">#AJAX</p>
             <p className="text-[14px] green-text-gradient">#CSS</p>
             <p className="text-[14px] pink-text-gradient">#Html</p>
           </div>
