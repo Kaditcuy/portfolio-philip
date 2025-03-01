@@ -170,7 +170,7 @@ export default function Projects() {
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                 <Image
-                  src="/assets/propertygirl.png"
+                  src="/assets/github.png"
                   alt="github"
                   width={20}
                   height={20}
