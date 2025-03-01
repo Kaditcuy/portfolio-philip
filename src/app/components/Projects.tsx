@@ -48,7 +48,7 @@ export default function Projects() {
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">
               <Link
-                href="https://emoji-feedback-k5q0krxda-philip-ukanwokes-projects.vercel.app"
+                href="https://emoji-feedback-sys.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-violet-600"
