@@ -119,7 +119,7 @@ export default function Projects() {
         <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
           <div className="relative w-full h-[230px]">
             <Image
-              src="/assets/my-ecommerce.png"
+              src="/assets/ecommerce.png"
               alt="My E-commerce"
               fill
               className="w-full h-full object-cover rounded-2xl"
